@@ -3,16 +3,25 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Form1 from './Form/Form1.js';
 import Form2 from './Form/Form2.js';
 import "./Multiform.css"
+import Form3 from './Form/Form3.js';
 
 const MultiForm = () => {
   const [showForm1, setShowForm1] = useState(1);
 
-  const handleNext = () => {
-    setShowForm1(0);
+  const handle1 = () => {
+    setShowForm1(1);
   };
 
-  const handlePrevious = () => {
-    setShowForm1(1);
+  const handle2 = () => {
+    setShowForm1(2);
+  };
+
+  const handle3 = () => {
+    setShowForm1(3);
+  };
+
+  const handle4 = () => {
+    setShowForm1(4);
   };
 
   return (
@@ -33,9 +42,9 @@ const MultiForm = () => {
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Form1 onNext={handleNext} />
+            <Form1 onHandle2={handle2} />
           </motion.div>
-        ) : showForm1 === 0 ? (
+        ) : showForm1 === 2 ? (
           <motion.div
             key="form2"
             initial={{ y: 100, opacity: 0 }}
@@ -43,7 +52,17 @@ const MultiForm = () => {
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Form2 onPrevious={handlePrevious} />
+            <Form2 onHandle3={handle3} />
+          </motion.div>
+        ) :  showForm1 === 3 ? (
+          <motion.div
+            key="form2"
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -100, opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Form3 onHandle4={handle4} />
           </motion.div>
         ) : null}
       </AnimatePresence>

@@ -37,6 +37,6 @@
     border-right: 0;
     border-left: 0;
 }
-input:focus, textarea:focus, select:focus{
-    border:0;
+.form2-input:focus{
+    outline:none;
 }

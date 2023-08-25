@@ -5,16 +5,15 @@ import "./Form2.css"
 const Form2 = ({ onPrevious }) => {
   return (
     <div className='form2_container'>
-      <label>testing1</label>
-      <input type='text'></input>
-      <label>testing2</label>
-      <input type='text'></input>
-      <label>testing3</label>
-      <input type='text'></input>
-      <label>testing4</label>
-      <input type='text'></input>
-      <button onClick={onPrevious}>Previous</button>
-    </div>
+      <h6>Question 2.1</h6>
+      <h3>Can we get your full name?</h3>
+      <input className='form2-input'/>
+      <div className='sure-div'>
+        <button className='fill' onClick={onPrevious}>Next
+        {/* <span><IoIosArrowForward/></span> */}
+        </button>
+      </div>
+      </div>
   );
 };
 

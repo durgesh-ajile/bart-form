@@ -5,20 +5,27 @@ import Form2 from './Form/Form2.js';
 import "./Multiform.css"
 
 const MultiForm = () => {
-  const [showForm1, setShowForm1] = useState(true);
+  const [showForm1, setShowForm1] = useState(1);
 
   const handleNext = () => {
-    setShowForm1(false);
+    setShowForm1(0);
   };
 
   const handlePrevious = () => {
-    setShowForm1(true);
+    setShowForm1(1);
   };
 
   return (
     <div className=''>
-      <AnimatePresence initial={false} exitBeforeEnter={false} mode="wait">
-        {showForm1 ? (
+    {/* <img
+    class="demo-bg"
+    src="https://www.medicaldevice-network.com/wp-content/uploads/sites/23/2018/08/markus-spiske-666905-unsplash.jpg"
+    alt=""
+  ></img> */}
+  <div className="bg-image"></div>
+  <div className="bg-text">
+  <AnimatePresence initial={false} exitBeforeEnter={false} mode="wait">
+        {showForm1 === 1 ? (
           <motion.div
             key="form1"
             initial={{ y: 100, opacity: 0 }}
@@ -28,7 +35,7 @@ const MultiForm = () => {
           >
             <Form1 onNext={handleNext} />
           </motion.div>
-        ) : (
+        ) : showForm1 === 0 ? (
           <motion.div
             key="form2"
             initial={{ y: 100, opacity: 0 }}
@@ -38,8 +45,9 @@ const MultiForm = () => {
           >
             <Form2 onPrevious={handlePrevious} />
           </motion.div>
-        )}
+        ) : null}
       </AnimatePresence>
+  </div>
     </div>
   );
 };

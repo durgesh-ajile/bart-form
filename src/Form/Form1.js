@@ -1,7 +1,7 @@
 // Form1.js
 import React from 'react';
 import "./Form1.css"
-import { IoIosArrowForward } from 'react-icons/io';
+// import { IoIosArrowForward } from 'react-icons/io';
 
 
 const Form1 = ({ onHandle2 }) => {

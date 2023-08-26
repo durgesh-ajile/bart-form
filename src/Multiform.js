@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Form1 from "./Form/Form1.js";
@@ -8,6 +9,7 @@ import Form4 from "./Form/Form4.js";
 import Form5 from "./Form/Form5.js";
 import Form6 from "./Form/Form6.js";
 import FormLast from "./Form/FormLast.js";
+
 
 const MultiForm = () => {
   const [showForm1, setShowForm1] = useState(1);
@@ -49,6 +51,7 @@ const MultiForm = () => {
     src="https://www.medicaldevice-network.com/wp-content/uploads/sites/23/2018/08/markus-spiske-666905-unsplash.jpg"
     alt=""
   ></img> */}
+
       <div className="bg-image"></div>
       <div className="bg-text">
         <AnimatePresence initial={false} exitBeforeEnter={false} mode="wait">

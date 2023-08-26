@@ -4,6 +4,7 @@ import Form1 from './Form/Form1.js';
 import Form2 from './Form/Form2.js';
 import "./Multiform.css"
 import Form3 from './Form/Form3.js';
+import FormLast from './Form/FormLast.js';
 
 const MultiForm = () => {
   const [showForm1, setShowForm1] = useState(1);
@@ -62,7 +63,7 @@ const MultiForm = () => {
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Form3 onHandle4={handle4} />
+            <FormLast onHandle4={handle4} />
           </motion.div>
         ) : null}
       </AnimatePresence>

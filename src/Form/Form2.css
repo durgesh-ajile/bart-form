@@ -13,10 +13,10 @@
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 0;
-    color: rgb(122 144 130);
+    color: rgba(255, 255, 255, 0.7);
 }
 .form2_container h3{
- color: rgb(122 144 130);
+ color: white;
  font-size: 27px;
  font-weight: 400;
  margin-bottom: 0;
@@ -29,6 +29,7 @@
 }
 .form2-input{
     background-color: transparent;
+    width: 70%;
     margin: 40px 0;
     height: 40px;
     color: white;
@@ -39,4 +40,7 @@
 }
 .form2-input:focus{
     outline:none;
+}
+.sure-div{
+    margin-top: 50px;
 }

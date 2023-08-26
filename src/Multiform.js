@@ -7,6 +7,7 @@ import Form3 from "./Form/Form3.js";
 import Form4 from "./Form/Form4.js";
 import Form5 from "./Form/Form5.js";
 import Form6 from "./Form/Form6.js";
+import FormLast from "./Form/FormLast.js";
 
 const MultiForm = () => {
   const [showForm1, setShowForm1] = useState(1);
@@ -69,11 +70,11 @@ const MultiForm = () => {
               exit={{ y: -100, opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Form2 onHandle3={handle3} />
+              <Form2 onHandle3={handle3} formData={formData} />
             </motion.div>
           ) : showForm1 === 3 ? (
             <motion.div
-              key="form3"
+              key="form2"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -100, opacity: 0 }}
@@ -83,7 +84,7 @@ const MultiForm = () => {
             </motion.div>
           ) : showForm1 === 4 ? (
             <motion.div
-              key="form4"
+              key="form3"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -100, opacity: 0 }}
@@ -93,7 +94,7 @@ const MultiForm = () => {
             </motion.div>
           ) : showForm1 === 5 ? (
             <motion.div
-              key="form5"
+              key="form4"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -100, opacity: 0 }}
@@ -103,13 +104,13 @@ const MultiForm = () => {
             </motion.div>
           ) : showForm1 === 6 ? (
             <motion.div
-              key="form6"
+              key="form5"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -100, opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Form6 formData={formData} />
+              <Form6 onHandle6={handle6} formData={formData} />
             </motion.div>
           ) : null}
         </AnimatePresence>

@@ -62,7 +62,7 @@ const MultiForm = () => {
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Form3 onHandle4={handle4} />
+            <Form3 onHandle4={handle1} />
           </motion.div>
         ) : null}
       </AnimatePresence>

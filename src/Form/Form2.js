@@ -8,9 +8,9 @@ const Form2 = ({ onHandle3, category }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     let formTwoData = {
-      name: name
+      mainName: name,
+      category: category
     }
-
     onHandle3(formTwoData)
   };
   return (

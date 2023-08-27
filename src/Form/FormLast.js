@@ -3,20 +3,31 @@ import React, { useState } from 'react';
 import "./FormLast.css"
 
 
-const FormLast = ({ onHandle2 }) => {
+const FormLast = ({ onHandle7, formData }) => {
     const [address, setAddress] = useState("");
     const [phone, setPhone] = useState("");
     const [city, setCity] = useState("");
     const [state, setState] = useState("");
     const [postal, setPostal] = useState("");
 
+    const handleSubmit = (e) => {
+        e.preventDefault(e);
+        let formData = {
+            address : address,
+            phone : phone,
+            city : city,
+            state : state,
+            postal : postal
+        }
+        onHandle7(formData)
+    }
 
   return (
     <div className='form1_container' id='form-last'>
       <h6>Question 3</h6>
       <h3>We will be sending some exclusive goodies & gifts your way!
 How do we reach you?</h3>
-      <form >
+      <form onSubmit={handleSubmit}>
       <div className="form-div">
       <div className="left-form">
       <input
@@ -57,6 +68,7 @@ How do we reach you?</h3>
           setPhone(e.target.value);
         }}
         value={phone}
+        type='number'
       />
       <input
       required
@@ -69,7 +81,7 @@ How do we reach you?</h3>
       />
       </div></div>
       <div className='sure-div'>
-        <button className='fill' onClick={onHandle2}>Submit
+        <button className='fill' type='submit' >Submit
         </button>
       </div>
       </form>

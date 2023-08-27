@@ -5,7 +5,7 @@ import right from "../Image/right.gif";
 
 const FormFirst = ({ onHandle1, formData, setCategory }) => {
   let transColor = "#ffffff1a";
-  let txtcolor = "#fff"
+  let txtcolor = "#fff";
 
   const [bgColor, setBgColor] = useState(transColor);
   const [bgRightColor, setRightBgColor] = useState(transColor);

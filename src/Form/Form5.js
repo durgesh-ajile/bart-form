@@ -11,7 +11,8 @@ const Form5 = ({ onHandle6, formData, category }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     let formData = {
-      "he's a": selectedValue,
+      "designation": selectedValue,
+      "leadName" : name
     };
     onHandle6(formData);
   };
@@ -45,13 +46,17 @@ const Form5 = ({ onHandle6, formData, category }) => {
       }
     </div> </div>:
     <div className="form2_container">
-    <h6>Question 2.3</h6>
+    <h6>Question 2.4</h6>
     <h3>And, you're a?</h3>
-    <select value={selectedValue} onChange={handleSelectChange}>
+    <select className="select-div" value={selectedValue} onChange={handleSelectChange}>
+      <option value="" selected>Select</option>
       <option value="Student">Student</option>
       <option value="Professional">Professional</option>
       <option value="Coding Enthusiast">Coding Enthusiast</option>
     </select>
+
+
+
     <div className="sure-div">
       <button
         className="fill"

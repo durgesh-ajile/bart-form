@@ -1,0 +1,13 @@
+.form-div input{
+    width: 80%;
+    margin: 20px;
+    padding-left: 10px;
+    font-size: 21px;
+    border-color: white;
+}
+.left-form{
+    /* margin-right: 20px; */
+}
+.form-div{
+    display: flex;
+}

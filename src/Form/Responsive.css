@@ -2,4 +2,26 @@
     .form-div{
         display: block;
     }
+    .img-gif{
+        display: block;
+    }
+    .form1_container {
+        margin: 10% 10%;
+    }
+    .form2_container {
+        margin: 10% 10%;
+    }
+    .right, .left{
+        margin: 30px 50px 30px 0;
+    }
+    .sure-div {
+        margin-top: 20px;
+    }
+    .form-div input {
+        width: 90%;
+        margin-left: 0;
+    }
+    #thanks{
+        margin-top: 30%;
+    }
 }

@@ -37,7 +37,7 @@ const FormFirst = ({ onHandle1, formData, setCategory }) => {
   return (
     <div className="form1_container">
       <h6>Question 1</h6>
-      <h4>Would you like to register as a team, or as an individual?</h4>
+      <h3 style={{marginBottom:'20px'}}>Would you like to register as a team, or as an individual?</h3>
       <div className="img-gif">
         <div
           className="left gif-color"

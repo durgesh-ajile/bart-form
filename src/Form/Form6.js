@@ -46,7 +46,7 @@ const Form6 = ({ formData }) => {
   }, []);
 
   return (
-    <div className="form1_container">
+    <div className="form1_container" id="thanks">
       <h3>Thank you for your time.</h3>
       <h4>
         Your registration has been successfully completed. We will reach out to

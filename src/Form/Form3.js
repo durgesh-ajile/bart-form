@@ -17,7 +17,7 @@ const Form3 = ({onHandle4, formData, category}) => {
 category === 'team' ?
     <div className='form1_container' id = 'form3-main'>
           <h6>Question 2.2</h6>
-          <h3>Welcome to HackerFlow!</h3>
+          <h3>Welcome to Bartchain!</h3>
 
       <div>
         <img className='image-setting' src={helloGif}></img>
@@ -55,7 +55,7 @@ category === 'team' ?
 <div>
   <img className='image-setting' src={helloGif}></img>
 </div>
-<h3>Welcome to HackerFlow!</h3>
+<h3>Welcome to Bartchain!</h3>
 
 <div className="sure-div">
   <button
